@@ -35,7 +35,7 @@ namespace Frozen
 
             foreach (string line in wishesFromFile)
             {
-                string[] tempArray = line.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] tempArray = line.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                 Christmas newChristmas = new Christmas(tempArray[0], tempArray[1]);
                 myChristmas.Add(newChristmas);
             }
