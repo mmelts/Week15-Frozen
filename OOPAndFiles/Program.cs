@@ -43,7 +43,7 @@ namespace OOPAndFiles
 
             foreach (string line in moviesFromFile)
             {
-                string[] tempArray = line.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] tempArray = line.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
                 //Console.WriteLine($"title from TempArray: {tempArray[0]}");
                 //Console.WriteLine($"rating from TempArray: {tempArray[1]}");
                 //Console.WriteLine($"year from TempArray: {tempArray[2]}");
